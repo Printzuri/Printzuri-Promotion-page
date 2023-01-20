@@ -1,4 +1,6 @@
 import React from 'react'
+import socialInsta from "../assets/instagram.png"
+import socialTweet from "../assets/twitter.png"
 
 const PrintZuri = () => {
   return (
@@ -40,14 +42,14 @@ const PrintZuri = () => {
 						<div>
 							<a>
 								<img
-									src="https://res.cloudinary.com/dhupahyac/image/upload/v1674152549/printzuri-logo_a1qexe.png"
-									alt="print zuri logo"
+									src={socialInsta}
+									alt="Instagram icon"
 								/>
 							</a>
 							<a>
 								<img
-									src="https://res.cloudinary.com/dhupahyac/image/upload/v1674152549/printzuri-logo_a1qexe.png"
-									alt="print zuri logo"
+									src={socialTweet}
+									alt="Twitter icon"
 								/>
 							</a>
 						</div>
