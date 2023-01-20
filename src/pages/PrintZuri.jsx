@@ -16,15 +16,18 @@ const PrintZuri = () => {
 					<img
 						src="https://res.cloudinary.com/dhupahyac/image/upload/v1674152549/printzuri-logo_a1qexe.png"
 						alt="print zuri logo"
+						className="page__logo"
 					/>
 				</nav>
 				<div className="page__content">
 					<div className="top__page">
-						<div>
-							<h1>We are building something amazing! </h1>
+						<div className="page__heading">
+							<h1 className="page__head">
+								We are building something amazing!{" "}
+							</h1>
 						</div>
-						<div>
-							<p>
+						<div className="page__info">
+							<p className="page__text">
 								We are a print-on-demand tool for creatives, businesses, and
 								organizations that provides a simple and easy-to-use platform
 								for fast printing of a variety of materials.
@@ -32,24 +35,38 @@ const PrintZuri = () => {
 						</div>
 					</div>
 					<div className="bottom__page">
-						<div>
-							<h2>Get notified when we launch</h2>
+						<div className="page__subhead">
+							<p className="page__subtext">Get notified when we launch</p>
 						</div>
-						<form>
-							<input type="email" placeholder="Email Address" />
-							<input type="submit" value="Notify Me" />
+						<form className="form__container">
+							<div className="input__left">
+								<input
+									type="email"
+									placeholder="Email Address"
+									className="input__field"
+								/>
+							</div>
+							<div className="input__right">
+								<input
+									type="submit"
+									value="Notify Me"
+									className="input__action"
+								/>
+							</div>
 						</form>
-						<div>
+						<div className="social__container">
 							<a>
 								<img
 									src={socialInsta}
 									alt="Instagram icon"
+									className="social__icons"
 								/>
 							</a>
 							<a>
 								<img
 									src={socialTweet}
 									alt="Twitter icon"
+									className="social__icons"
 								/>
 							</a>
 						</div>
