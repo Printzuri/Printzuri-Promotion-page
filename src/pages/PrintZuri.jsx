@@ -5,10 +5,11 @@ import socialTweet from "../assets/twitter.png"
 const PrintZuri = () => {
   return (
 		<div className="overall__container">
-			{/* <div>
+			{/* <div className="testing">
 				<img
-					src="https://res.cloudinary.com/dhupahyac/image/upload/v1674167865/Coming_Soon_1_gpk2tu.webp"
+					src="https://res.cloudinary.com/dhupahyac/image/upload/v1674170140/Coming_Soon_6_dewjdm.png"
 					alt=""
+					className="testing__img"
 				/>
 			</div> */}
 			<div className="main__container">
@@ -55,14 +56,14 @@ const PrintZuri = () => {
 							</div>
 						</form>
 						<div className="social__container">
-							<a>
+							<a className="link__one">
 								<img
 									src={socialInsta}
 									alt="Instagram icon"
 									className="social__icons"
 								/>
 							</a>
-							<a>
+							<a className="link__two">
 								<img
 									src={socialTweet}
 									alt="Twitter icon"

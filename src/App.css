@@ -1,12 +1,32 @@
+/* background-image: url("https://res.cloudinary.com/dhupahyac/image/upload/v1674170140/Coming_Soon_6_dewjdm.png"); */
+
 .overall__container {
-  background-image: url("https://res.cloudinary.com/dhupahyac/image/upload/v1674170140/Coming_Soon_6_dewjdm.png");
   background-repeat: no-repeat;
-  /* background-image: url(./assets/Coming-Soon-Background.png); */
+  background-image: url(./assets/Coming-Soon-Background.png);
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
 }
+
+/* .testing {
+  position: relative; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+
+.testing__img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+} */
 
 .main__container {
   max-width: 1440px;
@@ -60,27 +80,47 @@
 
 .form__container {
   margin: 1.5em auto 0;
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
-.input__left {
-  width: 70%;
+.input__field {
+  background-color: transparent;
+  border-color: #E6A320;
+  border-width: thin;
 }
 
-.input__field {
-  border-color: unset;
-  border-width: none;
+.input__action {
+  background-color: #E6A320;
+  border: none;
+  color: #FFFFFF;
+
 }
 
 .input__right {
-  width: 25%;
+  flex-basis: 20%;
+}
+
+.input__left {
+  flex-basis: 65%;
 }
 
 .social__container {
-  margin-top: 1.5em;
+  /* text-align: center; */
+  width: 20%;
+  margin: 1.5em auto 0;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border: 1px solid red;
 }
+
+.link__two {
+  margin-left: auto;
+}
+
+
 
 /* #root {
   max-width: 1280px;
