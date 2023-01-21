@@ -107,13 +107,11 @@
 }
 
 .social__container {
-  /* text-align: center; */
   width: 20%;
   margin: 1.5em auto 0;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .link__two {
