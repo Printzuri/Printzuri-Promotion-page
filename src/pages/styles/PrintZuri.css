@@ -1,3 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 .commingSoon{
+    min-height: 100vh;
+    background-image: url("../../assets/Coming-Soon-Background.png");
+    background-position: center;
+    background-size: cover;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.commingSoonCont{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.commingSoonNav {
+    padding: 30px 0;
+}
+.commingSoonNav img{
+    height: 40px;
+}
+.commingSoonSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px;
+    /* margin-top: 50px; */
+    height: 80vh;
+}
+.commingSoonSec h1{
+    font-size: 3.9rem;
+}
+.commingSoonSec p{
+    font-size: 1.1rem;
+}
+.commingSoon h2{
+    font-weight: normal;
+}
+.commingSoonForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+   
     
+}
+.commingSoonForm input{
+    width: 70%;
+    height: 45px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-color: #E6A320;
+    border-width: 1px;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+.commingSoon input::placeholder{
+    color: #c4c4c4b3;
+    ;
+}
+.commingSoonForm button{
+    height: 45px;
+    width: 120px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #E6A320;
+    border-radius: 8px;
+    border: 1px solid #E6A320;
+}
+.commingSoonForm button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color:#E6A320 ;
+}
+.commingSoonSocials{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+.commingSoonSocials img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:1024px) {
+    .commingSoonSec h1{
+        font-size: 3.5rem;
+    }
+    .commingSoonSec{
+        width: 81%;
+    }
+    .commingSoonForm{
+        width: 80%; 
+    }
+}
+@media (max-width:810px) {
+    .commingSoonSec h1{
+        font-size: 3rem;
+    }
+    .commingSoonSec p{
+        font-size: 1rem;
+    }
+    .commingSoonSec{
+        width: 85%;
+    }
+    .commingSoonForm{
+        width: 90%; 
+    }
+    .commingSoonSocials img{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+@media (max-width:645px) {
+    .commingSoonSec h1{
+        font-size: 2rem;
+    }
+    .commingSoonSec p{
+        font-size: 1rem;
+    }
+    .commingSoonSec{
+        width: 100%;
+    }
+    .commingSoonForm{
+        width: 100%; 
+    }
+
+}
+@media (max-width:426px) {
+    .commingSoonSec h1{
+        font-size: 2.2rem;
+    }
+    .commingSoonSec p{
+        font-size: 0.8rem;
+    }
+    .commingSoonSec{
+        width: 100%;
+    }
+    .commingSoonForm{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .commingSoonForm input {
+        width: 100%;
+    }
+    .commingSoonNav img{
+        height: 30px;
+    }
+    .commingSoonCont{
+        width: 87%;
+    }
+
 }
