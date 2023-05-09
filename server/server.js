@@ -60,7 +60,7 @@ app.post("/signup", async (req, res) => {
     req.protocol + "://" + req.headers.host + "/confirm/?" + params;
   const msg = {
     to: req.body.email,
-    from: "hello@printzuri.com", // Change to your verified sender
+    from: "hello@printzuri.com",
     subject: `Thank you for joining our waiting list`,
     html: `Dear ${req.body.firstname},<br>
     Thank you for signing up for our waiting list for Printzuri. We're excited to see your interest in our product!
