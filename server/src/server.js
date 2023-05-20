@@ -42,13 +42,25 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-app.post("/unsubcribed", async (req, res) => {});
+app.post("/unsubcribed", async (req, res) => {
+  const { email } = req.body;
+  try {
+    const subUser = await WaitingList.findOneAndUpdate(
+      { email, subscribed: true },
+      { subscribed: false }
+    );
+    if (!subUser) {
+      res.send({ msg: "you are not subcribed" });
+    }
+    res.send({ msg: "you have been unsubscribed", subUser });
+  } catch (e) {}
+});
 
-// app.post("/sendmail", async (req, res) => {
-//   const { sender, to, subject, message } = req.body;
-//   const sentMail = await sendEmail(sender, to, subject, message);
-//   res.send()
-// });
+app.post("/sendmail", async (req, res) => {
+  const { sender, to, subject, message } = req.body;
+  const sentMail = await sendEmail(sender, to, subject, message);
+  res.send(sentMail);
+});
 
 async function loadServer() {
   await mongooseConnect();
