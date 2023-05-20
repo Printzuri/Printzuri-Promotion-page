@@ -1,11 +1,13 @@
 require("dotenv").config();
 const express = require("express");
 const { mongooseConnect } = require("../db/mongoose");
-const { welcomeMail } = require("./email");
+const { welcomeMail, sendEmail } = require("./email");
+const validator = require("validator");
 const app = express();
 
 const PORT = 3000 || process.env.PORT;
 const LIST = require("../db/waitinglist");
+const WaitingList = require("../db/waitinglist");
 
 app.use(
   express.urlencoded({
@@ -17,23 +19,36 @@ app.use(express.json());
 app.post("/signup", async (req, res) => {
   const { email, fullname } = req.body;
   try {
-    let mail = await welcomeMail(email, fullname);
-    if (mail) {
-      const list = await new LIST({
-        email,
-        fullname,
-      });
-      await list.save();
-      res.send({ msg: "success", data: list }).status(200);
+    if (!validator.isEmail(email)) {
+      return res.status(400).send({ message: "invalid mail" });
     }
-
-    // console.log(mail);
+    const existingMail = await WaitingList.findOne({ email });
+    if (existingMail) {
+      return res
+        .status(200)
+        .send({ message: "you are alredy in the waiting List " });
+    }
+    const sentMail = await welcomeMail(email, fullname);
+    const list = await new LIST({
+      email,
+      fullname,
+    });
+    await list.save();
+    res.status(200).send({ msg: "success", data: { sentMail }, list });
   } catch (err) {
+    console.log("w node ma", err);
+
     res.send(err).status(500);
   }
 });
 
 app.post("/unsubcribed", async (req, res) => {});
+
+// app.post("/sendmail", async (req, res) => {
+//   const { sender, to, subject, message } = req.body;
+//   const sentMail = await sendEmail(sender, to, subject, message);
+//   res.send()
+// });
 
 async function loadServer() {
   await mongooseConnect();
