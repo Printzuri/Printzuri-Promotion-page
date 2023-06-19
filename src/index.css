@@ -1,29 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 :root {
-	font-family: "DM Sans", sans-serif;
-  color: #FFFFFF;
+  font-family: "DM Sans";
+  color: #1B022E;
 }
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+  font-family: "DM Sans";
 }
 
-/* h1 {
-  font-size: 4rem;
-  line-height: 4.5rem;
-  font-weight: 700;
+.container{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
 }
-
-img {
-  max-width: 100%;
-}
-
-input {
-  Padding: .6em 1.5em .6em 1.5em;
-  width: 100%;
-  border-radius: .625rem;
-  outline: none;
-  font-weight: 500;
-  font-size: 1.5rem;
-} */
