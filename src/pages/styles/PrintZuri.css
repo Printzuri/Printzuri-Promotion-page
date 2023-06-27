@@ -10,7 +10,6 @@
     flex-direction: column;
     width: 60%;
     margin: 0 auto 3.6em;
-    border: 1px solid red;
 }
 
 .heroHeading {
@@ -23,7 +22,6 @@
     color: var(--purple-color-110);
     font-size: 4.5rem;
     font-weight: 700;
-    border: 1px solid green;
 }
 
 .heroSubhead {
@@ -36,5 +34,46 @@
     color: var(--purple-color-120);
     font-size: 1.5rem;
     font-weight: 400;
-    border: 1px solid blue;
+}
+
+.videoContainer {
+    text-align: center;
+}
+
+
+/* Styling of the first section */
+
+.firstSection {
+    padding: 4.125em;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCol {
+    flex-basis: 48%;
+}
+
+.columnOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.uniqueHead {
+    color: var(--purple-color-110);
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.uniqueSubhead {
+    margin-top: 2.5em;
+}
+
+.uniqueSubtext {
+    color: var(--purple-color-110);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
