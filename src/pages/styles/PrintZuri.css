@@ -1,0 +1,41 @@
+.promoFaq{
+    padding-bottom: 50px;
+}
+.promoFaqHead{
+    text-align: center;
+}
+.promoFaqDetailHeader{
+    font-size: 1.1rem;
+    background-color: #F3EEF7;
+    padding: 16px;
+}
+.promoFooter{
+    background-color: #F3EEF7;
+    padding-top: 60px ;
+    padding-bottom: 10px;
+}
+p.promoFooterDetail{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.promoFooterNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.promoFooterNavSocial{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.promoFooterNavSocial  svg{
+    width: 30px;
+}
+
+.promoFooterNav img{
+    width: 100px;
+}
