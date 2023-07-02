@@ -1,3 +1,14 @@
+.promoFaq{
+    padding-bottom: 50px;
+}
+.promoFaqHead{
+    text-align: center;
+}
+.promoFaqDetailHeader{
+    font-size: 1.1rem;
+    background-color: #F3EEF7;
+    padding: 16px;
+}
 .promoFooter{
     background-color: #F3EEF7;
     padding-top: 60px ;
