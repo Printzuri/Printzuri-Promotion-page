@@ -57,106 +57,108 @@ const PrintZuri = () => {
 					</div>
 				</div>
 			</section>
-      <section className="container promoFaq">
-        <h1 className="promoFaqHead">FAQs</h1>
-        <div className="promoFaqDetail">
-          <h2 className="promoFaqDetailHeader">PRODUCTS</h2>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<AiOutlinePlus />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>The product I want is out of stock, when it become available again?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<AiOutlinePlus />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
-            >
-              <Typography>The product I want is out of stock, when it become available again?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        </div>
-        <div className="promoFaqDetail">
-          <h2 className="promoFaqDetailHeader">SHIPPING AND DELIVERY</h2>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<AiOutlinePlus />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>The product I want is out of stock, when it become available again?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<AiOutlinePlus />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
-            >
-              <Typography>The product I want is out of stock, when it become available again?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        </div>
-        <div className="promoFaqDetail">
-          <h2 className="promoFaqDetailHeader">PRODUCTS</h2>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<AiOutlinePlus />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>The product I want is out of stock, when it become available again?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<AiOutlinePlus />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
-            >
-              <Typography>The product I want is out of stock, when it become available again?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+      <section className="faqSection">
+        <div className="container promoFaq">
+          <h1 className="promoFaqHead">FAQs</h1>
+          <div className="promoFaqDetail">
+            <h2 className="promoFaqDetailHeader">PRODUCTS</h2>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<AiOutlinePlus />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>The product I want is out of stock, when it become available again?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<AiOutlinePlus />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <Typography>The product I want is out of stock, when it become available again?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+          <div className="promoFaqDetail">
+            <h2 className="promoFaqDetailHeader">SHIPPING AND DELIVERY</h2>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<AiOutlinePlus />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>The product I want is out of stock, when it become available again?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<AiOutlinePlus />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <Typography>The product I want is out of stock, when it become available again?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+          <div className="promoFaqDetail">
+            <h2 className="promoFaqDetailHeader">PRODUCTS</h2>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<AiOutlinePlus />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>The product I want is out of stock, when it become available again?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<AiOutlinePlus />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <Typography>The product I want is out of stock, when it become available again?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
         </div>
       </section>
       <footer className="promoFooter">

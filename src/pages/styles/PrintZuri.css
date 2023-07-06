@@ -1,3 +1,40 @@
+/* Styling of the first section */
+
+.firstSection {
+    padding: 4.125em;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCol {
+    flex-basis: 48%;
+}
+
+.columnOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.uniqueHead {
+    color: var(--purple-color-110);
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.uniqueSubhead {
+    margin-top: 2.5em;
+}
+
+.uniqueSubtext {
+    color: var(--purple-color-110);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 /* Styling of the hero section */
 
 .heroSection {
@@ -41,55 +78,24 @@
 }
 
 
-/* Styling of the first section */
-
-.firstSection {
-    padding: 4.125em;
-}
-
-.flexRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flexCol {
-    flex-basis: 48%;
-}
-
-.columnOne {
-    display: flex;
-    flex-direction: column;
-}
-
-.uniqueHead {
-    color: var(--purple-color-110);
-    font-size: 4.5rem;
-    font-weight: 500;
-}
-
-.uniqueSubhead {
-    margin-top: 2.5em;
-}
-
-.uniqueSubtext {
-    color: var(--purple-color-110);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
 /* Styling of the FAQ section */
+.faqSection{
+    background-color: #F5F5F5;
+}
 .promoFaq{
     padding-bottom: 50px;
 }
 .promoFaqHead{
     text-align: center;
+    padding: 50px 0;
 }
 .promoFaqDetailHeader{
     font-size: 1.1rem;
     background-color: #F3EEF7;
     padding: 16px;
+    margin: 0;
 }
+
 
 /* Styling of the Footer section */
 .promoFooter{
