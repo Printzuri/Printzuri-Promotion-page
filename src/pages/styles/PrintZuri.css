@@ -1,130 +1,173 @@
-/* Styling of the first section */
-
-.firstSection {
-    padding: 4.125em;
+/* Styling of the header section */
+header {
+    border-bottom: 1px solid #DCCDE7;
 }
 
-.flexRow {
+.headerFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5em 0em;
+}
+
+.navLinks {
+    color: var(--purple-color-120);
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.navLinks + .navLinks {
+    margin-left: 3.5em;
+}
+
+.navButton {
+    padding: .75em 1.5em;
+    border: none;
+    outline: none;
+    background-color: #500689;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+	font-size: 1.13rem;
+	font-weight: 400;
+}
+
+
+/* Styling of the first section */
+
+.firstSection {
+	padding: 4.125em;
+}
+
+.flexRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .flexCol {
-    flex-basis: 48%;
+	flex-basis: 48%;
 }
 
 .columnOne {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .uniqueHead {
-    color: var(--purple-color-110);
-    font-size: 4.5rem;
-    font-weight: 500;
+	color: var(--purple-color-110);
+	font-size: 4.5rem;
+	font-weight: 500;
 }
 
 .uniqueSubhead {
-    margin-top: 2.5em;
+	margin-top: 2.5em;
 }
 
 .uniqueSubtext {
-    color: var(--purple-color-110);
-    font-size: 1.5rem;
-    font-weight: 400;
+	color: var(--purple-color-110);
+	font-size: 1.5rem;
+	font-weight: 400;
 }
 
 /* Styling of the hero section */
 
 .heroSection {
-    padding: 5.4em 0em 3.6em 0em;
-    background-color: #F5F5F5;
+	padding: 5.4em 0em 3.6em 0em;
+	background-color: #f5f5f5;
 }
 
 .heroText {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 0 auto 3.6em;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0 auto 3.6em;
 }
 
 .heroHeading {
-    width: 90%;
-    margin: 0 auto 2.5em;
+	width: 90%;
+	margin: 0 auto 2.5em;
 }
 
 .heroHead {
-    text-align: center;
-    color: var(--purple-color-110);
-    font-size: 4.5rem;
-    font-weight: 700;
+	text-align: center;
+	color: var(--purple-color-110);
+	font-size: 4.5rem;
+	font-weight: 700;
 }
 
 .heroSubhead {
-    width: 89%;
-    margin: 0 auto;
+	width: 89%;
+	margin: 0 auto;
 }
 
 .heroSubtext {
-    text-align: center;
-    color: var(--purple-color-120);
-    font-size: 1.5rem;
-    font-weight: 400;
+	text-align: center;
+	color: var(--purple-color-120);
+	font-size: 1.5rem;
+	font-weight: 400;
 }
 
 .videoContainer {
-    text-align: center;
+	text-align: center;
 }
-
 
 /* Styling of the FAQ section */
-.faqSection{
-    background-color: #F5F5F5;
+.faqSection {
+	background-color: #f5f5f5;
 }
-.promoFaq{
-    padding-bottom: 50px;
+.promoFaq {
+	padding-bottom: 50px;
 }
-.promoFaqHead{
-    text-align: center;
-    padding: 50px 0;
+.promoFaqHead {
+	text-align: center;
+	padding: 50px 0;
 }
-.promoFaqDetailHeader{
-    font-size: 1.1rem;
-    background-color: #F3EEF7;
-    padding: 16px;
-    margin: 0;
+.promoFaqDetailHeader {
+	font-size: 1.1rem;
+	background-color: #f3eef7;
+	padding: 16px;
+	margin: 0;
 }
-
 
 /* Styling of the Footer section */
-.promoFooter{
-    background-color: #F3EEF7;
-    padding-top: 60px ;
-    padding-bottom: 10px;
+.promoFooter {
+	background-color: #f3eef7;
+	padding-top: 60px;
+	padding-bottom: 10px;
 }
-p.promoFooterDetail{
-    width: 35%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
+p.promoFooterDetail {
+	width: 35%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
 }
-.promoFooterNav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.promoFooterNavSocial{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.promoFooterNavSocial  svg{
-    width: 30px;
+.promoFooterNav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
 }
 
-.promoFooterNav img{
-    width: 100px;
+.promoFooterNavSocial {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.promoFooterNavSocial svg {
+	width: 30px;
+}
+
+.promoFooterNav img {
+	width: 100px;
+}
+
+@media (max-width: 1024px) {
+	.heroHead {
+		font-size: 3rem;
+	}
+
+	.uniqueHead {
+		font-size: 3rem;
+	}
 }
