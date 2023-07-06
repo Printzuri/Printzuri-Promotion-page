@@ -39,3 +39,82 @@ p.promoFooterDetail{
 .promoFooterNav img{
     width: 100px;
 }
+/* Styling of the hero section */
+
+.heroSection {
+    padding: 5.4em 0em 3.6em 0em;
+    background-color: #F5F5F5;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto 3.6em;
+}
+
+.heroHeading {
+    width: 90%;
+    margin: 0 auto 2.5em;
+}
+
+.heroHead {
+    text-align: center;
+    color: var(--purple-color-110);
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.heroSubhead {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.heroSubtext {
+    text-align: center;
+    color: var(--purple-color-120);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.videoContainer {
+    text-align: center;
+}
+
+
+/* Styling of the first section */
+
+.firstSection {
+    padding: 4.125em;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCol {
+    flex-basis: 48%;
+}
+
+.columnOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.uniqueHead {
+    color: var(--purple-color-110);
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.uniqueSubhead {
+    margin-top: 2.5em;
+}
+
+.uniqueSubtext {
+    color: var(--purple-color-110);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
