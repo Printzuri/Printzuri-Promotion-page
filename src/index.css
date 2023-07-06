@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 :root {
   font-family: "DM Sans";
-  color: #1B022E;
+  --purple-color-110: #1B022E;
+  --purple-color-120: #10011B;
+  --white-color: #FFFFFF;
 }
 
 * {
@@ -16,4 +18,8 @@
   margin: 0 auto;
   max-width: 1440px;
   position: relative;
+}
+
+img {
+  max-width: 100%;
 }
