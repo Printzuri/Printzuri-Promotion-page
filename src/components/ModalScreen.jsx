@@ -12,6 +12,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
+  minWidth: "545px",
   width: "40%",
   fontFamily: "DM Sans",
   // bgcolor: 'background.paper',
