@@ -15,238 +15,238 @@ import Typography from "@mui/material/Typography";
 import { AiOutlinePlus } from "react-icons/ai";
 import ModalScreen from "../components/ModalScreen";
 const PrintZuri = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  return (
-    <>
-      <header>
-        <div className="container">
-          <ModalScreen
-            open={open}
-            handleClose={handleClose}
-            handleOpen={handleOpen}
-          />
-          <div className="headerFlex">
-            <Link to="/" className="headerLogo">
-              <img src={logoImg} alt="Logo icon" />
-            </Link>
-            <div className="headerRight">
-              <Link to="/" className="navLinks">
-                Instagram
-              </Link>
-              <Link to="/" className="navLinks">
-                Twitter
-              </Link>
-              <Link to="/" className="navLinks">
-                YouTube
-              </Link>
-              <Link to="/" className="navLinks">
-                FAQs
-              </Link>
-              <Link to="/" className="navLinks">
-                <button className="navButton" onClick={handleOpen}>Join Waitlist</button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section className="heroSection">
-        <div className="container">
-          <div className="heroText">
-            <div className="heroHeading">
-              <h1 className="heroHead">
-                Everyday products that helps you stand out
-              </h1>
-            </div>
-            <div className="heroSubhead">
-              <p className="heroSubtext">
-                Printzuri is your go-to platform for your quality printed
-                product as a buyer or seller. Choose your desired product and we
-                will cover the rest.
-              </p>
-            </div>
-          </div>
-          <div className="videoContainer">
-            <img src={heroIcon} alt="PrintZuri video icon" />
-          </div>
-        </div>
-      </section>
-      <section className="firstSection">
-        <div className="container">
-          <div className="flexRow">
-            <div className="flexCol">
-              <div className="columnOne">
-                <div className="uniqueHeading">
-                  <h2 className="uniqueHead">What makes Printzuri unique?</h2>
-                </div>
-                <div className="uniqueSubhead">
-                  <p className="uniqueSubtext">
-                    You can create a store with Printzuri and monetize your
-                    creations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flexCol">
-              <img src={uniqueIcon} alt="Unique section icon" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="faqSection">
-        <div className="container promoFaq">
-          <h1 className="promoFaqHead">FAQs</h1>
-          <div className="promoFaqDetail">
-            <h2 className="promoFaqDetailHeader">PRODUCTS</h2>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<AiOutlinePlus />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography>
-                  The product I want is out of stock, when it become available
-                  again?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<AiOutlinePlus />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-              >
-                <Typography>
-                  The product I want is out of stock, when it become available
-                  again?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className="promoFaqDetail">
-            <h2 className="promoFaqDetailHeader">SHIPPING AND DELIVERY</h2>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<AiOutlinePlus />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography>
-                  The product I want is out of stock, when it become available
-                  again?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<AiOutlinePlus />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-              >
-                <Typography>
-                  The product I want is out of stock, when it become available
-                  again?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className="promoFaqDetail">
-            <h2 className="promoFaqDetailHeader">PRODUCTS</h2>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<AiOutlinePlus />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography>
-                  The product I want is out of stock, when it become available
-                  again?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<AiOutlinePlus />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-              >
-                <Typography>
-                  The product I want is out of stock, when it become available
-                  again?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-        </div>
-      </section>
-      <footer className="promoFooter">
-        <div className="container">
-          <p className="promoFooterDetail">
-            If you would like to find out more about Printzuri, or if you have
-            any questions, please reach out to us via hello@printzuri.com
-          </p>
-          <nav className="promoFooterNav">
-            <p>© 2022 Printzuri</p>
-            <div className="promoFooterNavSocial">
-              <Link to="/">
-                <Youtube />
-              </Link>
-              <Link to="/">
-                <Twitter />
-              </Link>
-              <Link to="/">
-                <Instagram />
-              </Link>
-            </div>
-            <img src={logoImg} alt="logo" />
-          </nav>
-        </div>
-      </footer>
-    </>
-  );
+	const [open, setOpen] = React.useState(false);
+	const handleOpen = () => setOpen(true);
+	const handleClose = () => setOpen(false);
+	return (
+		<>
+			<header>
+				<div className="container">
+					<ModalScreen
+						open={open}
+						handleClose={handleClose}
+						handleOpen={handleOpen}
+					/>
+					<div className="headerFlex">
+						<Link to="/" className="headerLogo">
+							<img src={logoImg} alt="Logo icon" />
+						</Link>
+						<div className="headerRight">
+							<Link to="/" className="navLinks">
+								Instagram
+							</Link>
+							<Link to="/" className="navLinks">
+								Twitter
+							</Link>
+							<Link to="/" className="navLinks">
+								YouTube
+							</Link>
+							<Link to="/" className="navLinks">
+								FAQs
+							</Link>
+							<button className="navButton navLinks" onClick={handleOpen}>
+								Join Waitlist
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section className="heroSection">
+				<div className="container">
+					<div className="heroText">
+						<div className="heroHeading">
+							<h1 className="heroHead">
+								Everyday products that helps you stand out
+							</h1>
+						</div>
+						<div className="heroSubhead">
+							<p className="heroSubtext">
+								Printzuri is your go-to platform for your quality printed
+								product as a buyer or seller. Choose your desired product and we
+								will cover the rest.
+							</p>
+						</div>
+					</div>
+					<div className="videoContainer">
+						<img src={heroIcon} alt="PrintZuri video icon" />
+					</div>
+				</div>
+			</section>
+			<section className="firstSection">
+				<div className="container">
+					<div className="flexRow">
+						<div className="flexCol">
+							<div className="columnOne">
+								<div className="uniqueHeading">
+									<h2 className="uniqueHead">What makes Printzuri unique?</h2>
+								</div>
+								<div className="uniqueSubhead">
+									<p className="uniqueSubtext">
+										You can create a store with Printzuri and monetize your
+										creations.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="flexCol">
+							<img src={uniqueIcon} alt="Unique section icon" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className="faqSection">
+				<div className="container promoFaq">
+					<h1 className="promoFaqHead">FAQs</h1>
+					<div className="promoFaqDetail">
+						<h2 className="promoFaqDetailHeader">PRODUCTS</h2>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<AiOutlinePlus />}
+								aria-controls="panel1a-content"
+								id="panel1a-header"
+							>
+								<Typography>
+									The product I want is out of stock, when it become available
+									again?
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+									eget.
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<AiOutlinePlus />}
+								aria-controls="panel2a-content"
+								id="panel2a-header"
+							>
+								<Typography>
+									The product I want is out of stock, when it become available
+									again?
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+									eget.
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+					</div>
+					<div className="promoFaqDetail">
+						<h2 className="promoFaqDetailHeader">SHIPPING AND DELIVERY</h2>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<AiOutlinePlus />}
+								aria-controls="panel1a-content"
+								id="panel1a-header"
+							>
+								<Typography>
+									The product I want is out of stock, when it become available
+									again?
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+									eget.
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<AiOutlinePlus />}
+								aria-controls="panel2a-content"
+								id="panel2a-header"
+							>
+								<Typography>
+									The product I want is out of stock, when it become available
+									again?
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+									eget.
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+					</div>
+					<div className="promoFaqDetail">
+						<h2 className="promoFaqDetailHeader">PRODUCTS</h2>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<AiOutlinePlus />}
+								aria-controls="panel1a-content"
+								id="panel1a-header"
+							>
+								<Typography>
+									The product I want is out of stock, when it become available
+									again?
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+									eget.
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<Accordion>
+							<AccordionSummary
+								expandIcon={<AiOutlinePlus />}
+								aria-controls="panel2a-content"
+								id="panel2a-header"
+							>
+								<Typography>
+									The product I want is out of stock, when it become available
+									again?
+								</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+									eget.
+								</Typography>
+							</AccordionDetails>
+						</Accordion>
+					</div>
+				</div>
+			</section>
+			<footer className="promoFooter">
+				<div className="container">
+					<p className="promoFooterDetail">
+						If you would like to find out more about Printzuri, or if you have
+						any questions, please reach out to us via hello@printzuri.com
+					</p>
+					<nav className="promoFooterNav">
+						<p>© 2022 Printzuri</p>
+						<div className="promoFooterNavSocial">
+							<Link to="/">
+								<Youtube />
+							</Link>
+							<Link to="/">
+								<Twitter />
+							</Link>
+							<Link to="/">
+								<Instagram />
+							</Link>
+						</div>
+						<img src={logoImg} alt="logo" />
+					</nav>
+				</div>
+			</footer>
+		</>
+	);
 };
 
 export default PrintZuri;
