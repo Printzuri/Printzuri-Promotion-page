@@ -1,0 +1,67 @@
+.modal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: "DM Sans";
+}
+.modalContainer{
+    width: 94%;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 25px 0;
+    
+}
+/* .modalContainer .container{
+    display: flex;
+    flex-direction: column;
+} */
+.modalHeader{
+    margin: 0;
+    padding: 20px 50px ;
+    text-align: center;
+    font-size: 3.45rem;
+    line-height: 65px;
+}
+.modalForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size:1.2rem
+}
+.modalForm label{
+    color: #10011B;
+    font-weight:bold;
+}
+.modalForm input{
+    color: #10011B;
+    border: 1px solid #C4BDBD;
+    border-radius: 8px;
+    padding: 6px 6px;
+    background-color: #F5F5F5;
+}
+.modalForm button{
+    background-color: 
+    #500689;
+    color: #F5F5F5;
+    padding: 10px 0;
+    font-size: 1.3rem ;
+    font-weight: normal;
+    border-radius: 8px;
+    outline: #500689;
+    border: #500689;
+    margin-top: 30px;
+}
+.modalForm button:hover{
+    cursor:pointer;
+}
+.modalCancel{
+    width: 30px;
+    text-align: left;
+}
+.modalCancel svg{
+    width: 30px;
+    height: 30px;
+}
+.modalCancel svg:hover{
+    cursor: pointer;
+}
