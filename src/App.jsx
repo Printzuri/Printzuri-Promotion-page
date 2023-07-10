@@ -7,7 +7,6 @@ function App() {
 		<div className="App">
 			<Routes>
 				<Route path="/" element={<PrintZuri />} />
-				{/* <Route path="/modal" element={<ModalScreen />} /> */}
 			</Routes>
 		</div>
 	);
